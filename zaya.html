@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои заявки - Корочки.есть</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Корочки.есть</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="zaya.html">Мои заявки</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <span class="nav-link text-light">
+                            <span class="badge bg-light text-primary">user123</span>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">Выход</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        <div class="row mb-4">
+            <div class="col">
+                <h2>Мои заявки</h2>
+                <p class="text-muted">Здесь вы можете просмотреть свои заявки на обучение и оставить отзыв</p>
+            </div>
+            <div class="col-auto">
+                <a href="addzaya.html" class="btn btn-primary">+ Новая заявка</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5 class="card-title">Курс: Программирование на Python</h5>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Дата начала:</span> 15.07.2026
+                                </p>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Способ оплаты:</span> Перевод по номеру телефона
+                                </p>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Статус:</span> 
+                                    <span class="badge bg-warning text-dark">Новая</span>
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                <button class="btn btn-outline-secondary btn-sm" disabled>
+                                    Отзыв недоступен
+                                </button>
+                                <small class="d-block text-muted mt-1">
+                                    <i>Доступно после завершения обучения</i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5 class="card-title">Курс: Data Science и машинное обучение</h5>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Дата начала:</span> 20.06.2026
+                                </p>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Способ оплаты:</span> Перевод по номеру телефона
+                                </p>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Статус:</span> 
+                                    <span class="badge bg-primary">Идет обучение</span>
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                <button class="btn btn-outline-secondary btn-sm" disabled>
+                                    Отзыв недоступен
+                                </button>
+                                <small class="d-block text-muted mt-1">
+                                    <i>Доступно после завершения обучения</i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5 class="card-title">Курс: Веб-разработка на JavaScript</h5>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Дата начала:</span> 01.08.2026
+                                </p>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Способ оплаты:</span> Наличными
+                                </p>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Статус:</span> 
+                                    <span class="badge bg-success">Обучение завершено</span>
+                                </p>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Отзыв:</span> 
+                                    <span class="text-success">Оставлен</span>
+                                    <small class="text-muted">(Оценка: 5/5)</small>
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                <span class="badge bg-success">✅ Отзыв оставлен</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5 class="card-title">Курс: Java для начинающих</h5>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Дата начала:</span> 10.05.2026
+                                </p>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Способ оплаты:</span> Перевод по номеру телефона
+                                </p>
+                                <p class="card-text mb-1">
+                                    <span class="fw-bold">Статус:</span> 
+                                    <span class="badge bg-success">Обучение завершено</span>
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                <button class="btn btn-outline-success btn-sm" 
+                                        data-bs-toggle="modal" 
+                                        data-bs-target="#reviewModal">
+                                    Оставить отзыв
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="reviewModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Оставить отзыв</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="course_name" class="form-label fw-bold">Курс</label>
+                            <input type="text" class="form-control" id="course_name" value="Java для начинающих" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rating" class="form-label fw-bold">Оценка <span class="text-danger">*</span></label>
+                            <select class="form-select" id="rating">
+                                <option value="">Выберите оценку</option>
+                                <option value="5">⭐ 5 - Отлично</option>
+                                <option value="4">⭐ 4 - Хорошо</option>
+                                <option value="3">⭐ 3 - Удовлетворительно</option>
+                                <option value="2">⭐ 2 - Плохо</option>
+                                <option value="1">⭐ 1 - Ужасно</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="review_text" class="form-label fw-bold">Текст отзыва <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="review_text" rows="4" 
+                                      placeholder="Поделитесь вашим мнением о качестве образовательных услуг..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-grid gap-2 w-100">
+                        <a href="zaya.html" class="btn btn-primary">Отправить отзыв</a>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
