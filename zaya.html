@@ -5,18 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мои заявки - Корочки.есть</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .carousel {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            width: auto;
+        }
+    </style>
 </head>
 <body>
+    <!-- Навигационная панель -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Корочки.есть</a>
+            <a class="navbar-brand fw-bold" href="zaya.html">
+                <img src="img4.png" alt="Корочки.есть" class="logo-img me-2">
+                Корочки.есть
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="zaya.html">Мои заявки</a>
+                        <a class="nav-link active" href="applications.html">Мои заявки</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -24,6 +50,9 @@
                         <span class="nav-link text-light">
                             <span class="badge bg-light text-primary">user123</span>
                         </span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addzaya.html">Новая заявка</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="index.html">Выход</a>
@@ -34,18 +63,61 @@
     </nav>
 
     <div class="container py-4">
+
+        <!-- Слайдер -->
         <div class="row mb-4">
             <div class="col">
-                <h2>Мои заявки</h2>
-                <p class="text-muted">Здесь вы можете просмотреть свои заявки на обучение и оставить отзыв</p>
-            </div>
-            <div class="col-auto">
-                <a href="addzaya.html" class="btn btn-primary">+ Новая заявка</a>
+                <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Индикаторы -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- Слайды -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://img.freepik.com/premium-photo/man-is-sitting-desk-with-computer-monitor-front-him_988095-21249.jpg?semt=ais_hybrid&w=740"
+                                 class="d-block w-100" alt="Обучение новым профессиям">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Обучение новым профессиям</h3>
+                                <p>Получите востребованную профессию в IT-сфере</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://avatars.mds.yandex.net/i?id=2d02035c37c25b39769eb90243f00366_l-5410274-images-thumbs&ref=rim&n=13&w=1536&h=1024"
+                                 class="d-block w-100" alt="Курсы для каждого">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Курсы для каждого</h3>
+                                <p>Выберите подходящий курс и начните обучение</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://repository-images.githubusercontent.com/807888667/dd2b00b1-1105-4164-a787-3e08bf144a8a"
+                                 class="d-block w-100" alt="Сертификаты и дипломы">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Сертификаты и дипломы</h3>
+                                <p>Подтвердите свои знания официальными документами</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кнопки управления -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
             </div>
         </div>
 
+        <!-- Список заявок -->
         <div class="row">
             <div class="col">
+                <!-- Заявка 1: Новая (кнопка недоступна) -->
                 <div class="card mb-3">
                     <div class="card-body">
                         <div class="row">
@@ -58,7 +130,7 @@
                                     <span class="fw-bold">Способ оплаты:</span> Перевод по номеру телефона
                                 </p>
                                 <p class="card-text mb-1">
-                                    <span class="fw-bold">Статус:</span> 
+                                    <span class="fw-bold">Статус:</span>
                                     <span class="badge bg-warning text-dark">Новая</span>
                                 </p>
                             </div>
@@ -74,6 +146,7 @@
                     </div>
                 </div>
 
+                <!-- Заявка 2: Идет обучение (кнопка недоступна) -->
                 <div class="card mb-3">
                     <div class="card-body">
                         <div class="row">
@@ -86,7 +159,7 @@
                                     <span class="fw-bold">Способ оплаты:</span> Перевод по номеру телефона
                                 </p>
                                 <p class="card-text mb-1">
-                                    <span class="fw-bold">Статус:</span> 
+                                    <span class="fw-bold">Статус:</span>
                                     <span class="badge bg-primary">Идет обучение</span>
                                 </p>
                             </div>
@@ -102,6 +175,7 @@
                     </div>
                 </div>
 
+                <!-- Заявка 3: Обучение завершено + ОТЗЫВ УЖЕ ЕСТЬ -->
                 <div class="card mb-3">
                     <div class="card-body">
                         <div class="row">
@@ -114,11 +188,11 @@
                                     <span class="fw-bold">Способ оплаты:</span> Наличными
                                 </p>
                                 <p class="card-text mb-1">
-                                    <span class="fw-bold">Статус:</span> 
+                                    <span class="fw-bold">Статус:</span>
                                     <span class="badge bg-success">Обучение завершено</span>
                                 </p>
                                 <p class="card-text mb-1">
-                                    <span class="fw-bold">Отзыв:</span> 
+                                    <span class="fw-bold">Отзыв:</span>
                                     <span class="text-success">Оставлен</span>
                                     <small class="text-muted">(Оценка: 5/5)</small>
                                 </p>
@@ -130,6 +204,7 @@
                     </div>
                 </div>
 
+                <!-- Заявка 4: Обучение завершено + КНОПКА АКТИВНА -->
                 <div class="card mb-3">
                     <div class="card-body">
                         <div class="row">
@@ -142,13 +217,13 @@
                                     <span class="fw-bold">Способ оплаты:</span> Перевод по номеру телефона
                                 </p>
                                 <p class="card-text mb-1">
-                                    <span class="fw-bold">Статус:</span> 
+                                    <span class="fw-bold">Статус:</span>
                                     <span class="badge bg-success">Обучение завершено</span>
                                 </p>
                             </div>
                             <div class="col-md-4 text-md-end mt-3 mt-md-0">
-                                <button class="btn btn-outline-success btn-sm" 
-                                        data-bs-toggle="modal" 
+                                <button class="btn btn-outline-success btn-sm"
+                                        data-bs-toggle="modal"
                                         data-bs-target="#reviewModal">
                                     Оставить отзыв
                                 </button>
@@ -160,6 +235,7 @@
         </div>
     </div>
 
+    <!-- Модальное окно для отзыва -->
     <div class="modal fade" id="reviewModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -186,14 +262,14 @@
                         </div>
                         <div class="mb-3">
                             <label for="review_text" class="form-label fw-bold">Текст отзыва <span class="text-danger">*</span></label>
-                            <textarea class="form-control" id="review_text" rows="4" 
+                            <textarea class="form-control" id="review_text" rows="4"
                                       placeholder="Поделитесь вашим мнением о качестве образовательных услуг..."></textarea>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <div class="d-grid gap-2 w-100">
-                        <a href="zaya.html" class="btn btn-primary">Отправить отзыв</a>
+                        <a href="applications.html" class="btn btn-primary">Отправить отзыв</a>
                         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
                     </div>
                 </div>
